@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check</title>
+</head>
+<body>
+<script>
+    let numberphone = ['09812312312','09412312312','09312312312','09212312312','09834534523'];
+   console.log(numberphone)
+   regex = /^(098){1}[0-9]{8}$/
+    function checkNumberPhone(numberphone) {
+        document.write('nhung so dien thoai viet tel la : ')
+       for(let i = 0 ; i<numberphone.length ; i++){
+           if(regex.test(numberphone[i])){
+               document.write(' '+numberphone[i]);
+           }
+       }
+    }
+    checkNumberPhone(numberphone);
+
+</script>
+</body>
+</html>
